@@ -158,6 +158,9 @@ const App = () => {
           <button className="btn btn-primary" style={{padding: '16px 40px', fontSize: '1.2rem'}}>
             Créer un compte gratuit
           </button>
+          <button className="btn btn-tertiary" style={{padding: '16px 40px', fontSize: '1.2rem'}}>
+            Se connecter <ArrowRight size={16}/>
+          </button>
         </div>
       </section>
 

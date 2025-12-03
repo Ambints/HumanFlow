@@ -47,6 +47,29 @@ body {
   background-color: var(--c-secondary);
   color: var(--c-white);
 }
+.btn-tertiary {
+  background-color: transparent;
+  color: var(--c-secondary);
+  border: 2px solid var(--c-secondary);
+  margin-left: 16px; /* Espacement à gauche du bouton tertiaire */
+}
+
+.btn-tertiary:hover {
+  background-color: var(--c-secondary);
+  color: var(--c-white);
+  border-color: var(--c-secondary);
+}
+
+.btn-tertiary:active {
+  background-color: var(--c-primary);
+  border-color: var(--c-primary);
+  transform: scale(0.98);
+}
+
+.btn-tertiary:focus {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 2px;
+}
 
 /* Header */
 header {
