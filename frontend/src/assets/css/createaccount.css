@@ -1,0 +1,162 @@
+/* Variables de couleurs */
+:root {
+  --c-darkest: #021024;
+  --c-primary: #052659;
+  --c-secondary: #5483B3;
+  --c-accent: #7DA0CA;
+  --c-light: #C1E8FF;
+  --c-white: #ffffff;
+}
+
+/* Container principal */
+.create-account-container {
+  min-height: 100vh;
+  width: 1900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--c-primary) 0%, var(--c-secondary) 100%);
+  padding: 20px;
+}
+
+/* Carte de création de compte */
+.create-account-card {
+  background: var(--c-white);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(2, 16, 36, 0.3);
+  padding: 40px;
+  margin-right: 405px;
+  width: 100%;
+  max-width: 420px;
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* En-tête */
+.create-account-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--c-darkest);
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.create-account-subtitle {
+  font-size: 14px;
+  color: var(--c-secondary);
+  margin: 0 0 32px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Formulaire */
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-account-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--c-primary);
+}
+
+.create-account-input {
+  padding: 12px 16px;
+  border: 2px solid var(--c-light);
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.create-account-input:focus {
+  border-color: var(--c-secondary);
+  box-shadow: 0 0 0 3px rgba(84, 131, 179, 0.1);
+}
+
+.create-account-input::placeholder {
+  color: var(--c-accent);
+}
+
+/* Bouton */
+.create-account-button {
+  background: linear-gradient(135deg, var(--c-primary) 0%, var(--c-secondary) 100%);
+  color: var(--c-white);
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.create-account-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(5, 38, 89, 0.4);
+  background: linear-gradient(135deg, var(--c-secondary) 0%, var(--c-accent) 100%);
+}
+
+.create-account-button:active {
+  transform: translateY(0);
+}
+
+/* Pied de page */
+.create-account-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--c-secondary);
+}
+
+.create-account-link {
+  color: var(--c-primary);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 4px;
+  transition: color 0.2s ease;
+}
+
+.create-account-link:hover {
+  color: var(--c-secondary);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .create-account-container {
+    width: 100%;
+  }
+
+  .create-account-card {
+    padding: 30px 24px;
+    margin-right: 0;
+  }
+  
+  .create-account-title {
+    font-size: 24px;
+  }
+  
+  .create-account-subtitle {
+    font-size: 13px;
+  }
+}
